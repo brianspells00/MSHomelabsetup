@@ -1,4 +1,4 @@
-<h1>Windows Active Directoy</h1>
+<h1>Windows Active Directory</h1>
 
 
 <h2>Description</h2>
