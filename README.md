@@ -25,7 +25,7 @@ This project consists of a Windows Active Directory creation and configuration. 
 
 <p align="center">
 Network Diagram Reference: <br/>
-<img src="https://github.com/brianspells00/MSHomelabsetup/blob/main/1Network-diagram-ss.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/brianspells00/MSHomelabsetup/blob/main/Network%20Diagram.png"/>
 <br />
 
 <p align="center">
