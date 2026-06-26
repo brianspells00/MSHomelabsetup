@@ -17,7 +17,7 @@ This project consists of a Windows Active Directory creation and configuration. 
 
 <h2>Virtual Environments Used </h2>
 
-- <b>Windows 11</b>
+- <b>Windows 10</b>
 
 - <b>Windows Server 2025</b>
 
@@ -128,18 +128,18 @@ The same thing could be accomplished by navigating the directory in which the fi
 <br />
 
 <p align="center">
-Now that the Domain controller is completely configured I’m creating the client VM. I named the new VM “Client 1” and gave it 4 processors, 4 GB of RAM and enabled Windows 11 as the OS. I also edited the settings of the VM to ensure bidirectional drag-and-drop and Shared Clipboard. I then changed the network adapter settings so that the Client 1 VM will be connected to the internal network: <br/>
+Now that the Domain controller is completely configured I’m creating the client VM. I named the new VM “Client 1” and gave it 4 processors, 4 GB of RAM and enabled Windows 10 as the OS. I also edited the settings of the VM to ensure bidirectional drag-and-drop and Shared Clipboard. I then changed the network adapter settings so that the Client 1 VM will be connected to the internal network: <br/>
 <img src="https://github.com/brianspells00/MSHomelabsetup/blob/main/28VM2%20network%20config.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 
 <p align="center">
-I ran the Client VM and selected the Windows 11 disk download file from the Microsoft Website, installed it onto the VM and let the system reboot. Once I logged into the account I went to settings and verified that the Client was connected to the internal network “personaldomain.com” I also opened the Windows Command Prompt and ran the prompt [> ping personaldomain.com]  to communicate with the domain controller and got response which indicates connectivity: <br/>
+I ran the Client VM and selected the Windows 10 disk download file from the Microsoft Website, installed it onto the VM and let the system reboot. Once I logged into the account I went to settings and verified that the Client was connected to the internal network “personaldomain.com” I also opened the Windows Command Prompt and ran the prompt [> ping personaldomain.com]  to communicate with the domain controller and got response which indicates connectivity: <br/>
 <img src="https://github.com/brianspells00/MSHomelabsetup/blob/main/29Client%20is%20connected%20to%20the%20DC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <img src="https://github.com/brianspells00/MSHomelabsetup/blob/main/30cmdPing.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 
 <p align="center">
-Since my machine is running Windows 11 home edition I’m unable to place the computer into the Active directory. If I were to be running an enterprise version of Windows 11 then I would be able to see the Client 1 in the Computers directory of the Active Directory Users and Computers application. I then went to the DHCP server in the Domain Controller and saw that the DHCP gave the Client 1 VM and IP address of 172.16.0.101. On an enterprise level every device added would be assigned an IP address from 172.16.0.101-200. Since there is an expiration time on the IP lease that would allow IP addresses to be reused: <br/>
+Since my machine is running Windows 10 home edition I’m unable to place the computer into the Active directory. If I were to be running an enterprise version of Windows 10 then I would be able to see the Client 1 in the Computers directory of the Active Directory Users and Computers application. I then went to the DHCP server in the Domain Controller and saw that the DHCP gave the Client 1 VM and IP address of 172.16.0.101. On an enterprise level every device added would be assigned an IP address from 172.16.0.101-200. Since there is an expiration time on the IP lease that would allow IP addresses to be reused: <br/>
 <img src="https://github.com/brianspells00/MSHomelabsetup/blob/main/31Client%20computer%20assigned%20an%20IP%20address.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 
